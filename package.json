@@ -12,6 +12,7 @@
     "dummy": 0
   },
   "dependencies": {
+    "@cap-js/change-tracking": "^1.0.5",
     "@sap/cds": ">=7",
     "express": "^4"
   },

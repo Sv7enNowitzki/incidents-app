@@ -163,6 +163,7 @@ annotate service.Incidents with {
     }
 };
 annotate service.Incidents.conversation with @(
+// annotate service.conversation with @(
     title : '{i18n>Conversation}',
     UI.LineItem #i18nConversation1 : [
         {

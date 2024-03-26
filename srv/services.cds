@@ -15,3 +15,19 @@ service AdminService @(requires:'admin') {
   entity Customers as projection on my.Customers;
   entity Incidents as projection on my.Incidents;
 }
+
+annotate ProcessorService.Incidents with @changelog: [title] {
+  conversation @changelog: [conversation.message];
+}
+
+// annotate ProcessorService.Incidents with @changelog: [title] {
+//   customer @changelog: [customer.order.orderNumber, customer.order.shippingAddress];
+// }
+
+// annotate ProcessorService.Incidents with @changelog: [title] {
+//   customer @changelog: [customer.addresses.city, customer.addresses.streetAddress];
+// }
+
+// annotate ProcessorService.Incidents with @changelog: [title] {
+//   conversation @changelog: [conversation.message];
+// }
